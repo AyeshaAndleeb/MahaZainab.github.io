@@ -1,6 +1,4 @@
-// Libraries Imports
 import { Link } from "react-router-dom";
-// Local Imports
 import { socialLinks } from "@/data/social-links";
 import { type SocialLink } from "@/types/social-links";
 
@@ -11,7 +9,7 @@ export default function SocialLinksComp() {
         <Link
           key={index}
           to={link.href}
-          className="p-3 rounded-xl border border-gray-200 dark:border-gray-600 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-all duration-300 group"
+          className="p-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/50 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-300 dark:hover:border-blue-600 transition-all duration-200"
           aria-label={link.label}
           dangerouslySetInnerHTML={{ __html: link.icon }}
         />

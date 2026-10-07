@@ -3,15 +3,13 @@ import { FileText } from "lucide-react";
 
 export default function EmptyStateComp() {
   return (
-    <div className="w-full max-w-2xl mx-auto p-8 text-center">
-      <div className="flex justify-center mb-4">
-        <FileText className="w-12 h-12 text-blue-400" />
-      </div>
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-        Content Coming Soon
+    <div className="w-full max-w-md mx-auto py-12 text-center">
+      <FileText className="w-8 h-8 text-gray-300 dark:text-gray-600 mx-auto mb-3" />
+      <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-1">
+        Coming Soon
       </h3>
-      <p className="text-gray-600 dark:text-gray-400">
-        This section is currently being updated. Please check back later.
+      <p className="text-xs text-gray-400 dark:text-gray-500">
+        This section is being updated.
       </p>
     </div>
   );

@@ -79,11 +79,11 @@ export default function InstallPWAButton() {
       <Button
         onClick={handleInstallClick}
         variant="outline"
-        size="lg"
-        className="rounded-full border cursor-pointer border-blue-600 dark:border-blue-400 px-6 py-3 text-lg font-semibold text-blue-600 dark:text-blue-400
-          hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 dark:hover:text-white transition shadow-lg bg-white dark:bg-gray-800"
+        size="sm"
+        className="rounded-lg border cursor-pointer border-gray-300 dark:border-gray-600 px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-400
+          hover:bg-gray-900 hover:text-white hover:border-gray-900 dark:hover:bg-gray-100 dark:hover:text-gray-900 transition-all bg-white dark:bg-gray-800"
       >
-        <Gpu size={16} className="mr-2" />
+        <Gpu size={14} className="mr-1.5" />
         Install App
       </Button>
     </>
