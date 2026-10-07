@@ -31,5 +31,5 @@ export const menuItems: MenuItem[] = [
 
 export const cvData: CvData = {
   title: "CV",
-  url: "/cv",
+  url: "/Maha_Zainab_Resume.pdf",
 };

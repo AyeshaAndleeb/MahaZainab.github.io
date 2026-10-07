@@ -33,8 +33,8 @@ export default function ScrollToggleButton() {
       className="
         fixed bottom-8 right-8 z-50
         p-4 rounded-full shadow-lg
-        bg-black text-white
-        hover:bg-[#155dfc]
+        bg-black dark:bg-gray-700 text-white
+        hover:bg-[#155dfc] dark:hover:bg-blue-600
         transition-all duration-300
       "
     >

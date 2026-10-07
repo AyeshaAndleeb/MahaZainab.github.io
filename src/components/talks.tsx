@@ -38,10 +38,10 @@ export default function TalksSection() {
   );
 
   return (
-    <section id="talks" className="py-10 bg-gray-50">
+    <section id="talks" className="py-10 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto px-6 xl:px-0">
         <div className="text-left xl:text-center mb-10">
-          <h2 className="text-3xl font-bold mb-4 bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold mb-4 bg-linear-to-r from-gray-900 to-gray-700 dark:from-gray-100 dark:to-gray-300 bg-clip-text text-transparent">
             Talks
           </h2>
         </div>
@@ -52,10 +52,10 @@ export default function TalksSection() {
           {sortedKeys?.map((year) => (
             <div key={year} className="space-y-2">
               <div className="flex items-center gap-3">
-                <Calendar className="w-6 h-6 text-blue-600" />
-                <h3 className="text-xl font-bold text-gray-900">{year}</h3>
-                <div className="flex-1 h-px bg-gray-300 ml-4"></div>
-                <span className="text-xs text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                <Calendar className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">{year}</h3>
+                <div className="flex-1 h-px bg-gray-300 dark:bg-gray-600 ml-4"></div>
+                <span className="text-xs text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 px-3 py-1 rounded-full">
                   {visibleGroups[year]?.length} talk
                   {visibleGroups[year]?.length > 1 ? "s" : ""}
                 </span>
@@ -65,21 +65,21 @@ export default function TalksSection() {
                 {visibleGroups[year]?.map((item) => (
                   <div
                     key={item?.id}
-                    className="group bg-white rounded-2xl p-4 border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-blue-200"
+                    className="group bg-white dark:bg-gray-900 rounded-2xl p-4 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all duration-300 hover:border-blue-200 dark:hover:border-blue-700"
                   >
                     <div className="flex flex-wrap justify-between items-start gap-3">
                       <div className="min-w-[200px]">
-                        <h3 className="text-base font-bold text-gray-900">
+                        <h3 className="text-base font-bold text-gray-900 dark:text-gray-100">
                           {item?.organization}
                         </h3>
-                        <h3 className="text-sm text-gray-600">
+                        <h3 className="text-sm text-gray-600 dark:text-gray-400">
                           {item?.title}
                         </h3>
                       </div>
 
-                      <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 border border-blue-200 w-fit">
-                        <Mic size={16} className="text-blue-600" />
-                        <span className="text-xs font-medium text-blue-700 whitespace-nowrap">
+                      <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 w-fit">
+                        <Mic size={16} className="text-blue-600 dark:text-blue-400" />
+                        <span className="text-xs font-medium text-blue-700 dark:text-blue-300 whitespace-nowrap">
                           {item?.category || "Talk"}
                         </span>
                       </div>
